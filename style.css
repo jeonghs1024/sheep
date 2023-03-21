@@ -1,0 +1,92 @@
+* {
+  outline: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #a8d9fc;
+  overflow: hidden;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+}
+
+*:before, *:after {
+  box-sizing: border-box;
+  position: absolute;
+  content: '';
+  z-index: 1;
+}
+
+.cloud {
+    width: 200px;
+    height: 100px;
+    background-color: #fff;
+    top: 10%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    border-radius: 100px;
+    box-shadow: 0 0 10px #fff, inset -10px -10px 30px #e5e5e5;
+}
+
+.cloud::before {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: -20px;
+    left: 40px;
+    box-shadow: 0 0 10px #fff;
+}
+
+.cloud::after {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: -30px;
+    left: 90px;
+    box-shadow: 0 0 10px #fff;
+}
+
+.cloud2 {
+    width: 300px;
+    height: 100px;
+    background-color: #fff;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100px;
+    box-shadow: 0 0 10px #fff, inset -10px -10px 30px #e5e5e5;
+}
+
+.cloud2::before {
+    width: 100px;
+    height: 90px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: -40px;
+    left: 40px;
+    box-shadow: 0 0 10px #fff;
+}
+.cloud2::after {
+    width: 150px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: -50px;
+    left: 110px;
+    box-shadow: 0 0 10px #fff;
+}
